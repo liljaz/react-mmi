@@ -7,10 +7,11 @@ import React from 'react';
 
 class Machine extends React.Component {
   render() {
-    // Dans tous les cas, afficher
     return (
         <div
+        {/*Si isActive passée en props est à true, ajouter la classe "active" */}
         className= { this.props.isActive ? "machine active" : "machine" }>
+          {/* Afficher le nom*/}
           {this.props.name}
         </div>
       )

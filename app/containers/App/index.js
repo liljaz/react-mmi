@@ -44,9 +44,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="main">
-        <Header/>
           {/*Conteneur de notre liste*/}
-          <div className="machines-list">
+          <div className="header">Coffee Machines !</div>
+          <div className="machines-list"> 
             {/*Boucle sur notre collection de machines*/}
             { this.state.machines.map(machine =>
                 // Le composant Machine s'affichera autant de fois
@@ -56,7 +56,7 @@ class App extends React.Component {
                          isActive={machine.isActive}/>
               )}
           </div>
-        <Footer/>
+          <div className="footer">All rights reserved</div>
       </div>
     );
   }
